@@ -33,8 +33,7 @@ func attack(target)-> void:
 	self.target =target
 	
 	yield(animationPlayer,"animation_finished")
-	target.hp-=4
-	
+
 	self.target  = null
 	emit_signal("end_turn")
 	
