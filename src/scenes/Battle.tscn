@@ -24,9 +24,6 @@ modulate = Color( 1, 1, 1, 0.207843 )
 position = Vector2( 45, 81 )
 texture = ExtResource( 1 )
 
-[node name="Enemy" parent="." instance=ExtResource( 2 )]
-position = Vector2( 46, 34 )
-
 [node name="UI" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -132,11 +129,14 @@ rect_min_size = Vector2( 32, 13 )
 theme = ExtResource( 7 )
 text = "SWORD"
 
+[node name="Enemy" parent="." instance=ExtResource( 2 )]
+position = Vector2( 46, 29 )
+
 [connection signal="ap_changed" from="PlayerStats" to="UI/StatsPanel" method="_on_PlayerStats_ap_changed"]
 [connection signal="hp_changed" from="PlayerStats" to="UI/StatsPanel" method="_on_PlayerStats_hp_changed"]
 [connection signal="mp_changed" from="PlayerStats" to="UI/StatsPanel" method="_on_PlayerStats_mp_changed"]
-[connection signal="on_death" from="Enemy" to="." method="_on_Enemy_on_death"]
 [connection signal="pressed" from="UI/BattleActionButtons/SwordButton" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="UI/BattleActionButtons/Button2" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="UI/BattleActionButtons/Button3" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="UI/BattleActionButtons/Button4" to="." method="_on_Button_pressed"]
+[connection signal="on_death" from="Enemy" to="." method="_on_Enemy_on_death"]
