@@ -8,11 +8,12 @@ hp = 45
 attack_damage = 2
 
 [node name="Sprite" parent="." index="0"]
-scale = Vector2( 0.202658, 0.263473 )
+scale = Vector2( 0.194352, 0.245509 )
 texture = ExtResource( 2 )
 
 [node name="HoverInfo" parent="." index="3"]
-margin_left = -16.0
-margin_top = 1.0
-margin_right = 23.0
-margin_bottom = 38.0
+margin_left = -20.0
+margin_top = -19.0
+margin_right = 19.0
+margin_bottom = 18.0
+description = "its not boss , Its sad ghost (;_;)"
