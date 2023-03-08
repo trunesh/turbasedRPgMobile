@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/scenes/Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/download__8_-removebg-preview.png" type="Texture" id=2]
+
+[node name="GhostBoss" instance=ExtResource( 1 )]
+hp = 45
+attack_damage = 2
+
+[node name="Sprite" parent="." index="0"]
+scale = Vector2( 0.202658, 0.263473 )
+texture = ExtResource( 2 )
+
+[node name="HoverInfo" parent="." index="3"]
+margin_left = -16.0
+margin_top = 1.0
+margin_right = 23.0
+margin_bottom = 38.0

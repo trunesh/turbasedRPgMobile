@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/scenes/Enemy.gd" type="Script" id=1]
 [ext_resource path="res://src/assets/MobileRPG Resources/Images/Rat.png" type="Texture" id=2]
 [ext_resource path="res://src/lookUptheme.tres" type="Theme" id=3]
+[ext_resource path="res://src/scenes/HoverInfo.tscn" type="PackedScene" id=4]
 
 [sub_resource type="Animation" id=3]
 resource_name = "Attack"
@@ -87,3 +88,10 @@ align = 1
 anims/Attack = SubResource( 3 )
 anims/RESET = SubResource( 1 )
 anims/Shake = SubResource( 2 )
+
+[node name="HoverInfo" parent="." instance=ExtResource( 4 )]
+margin_left = -18.0
+margin_top = -18.0
+margin_right = 21.0
+margin_bottom = 19.0
+rect_min_size = Vector2( 30, 30 )
